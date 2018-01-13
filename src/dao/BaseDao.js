@@ -63,11 +63,11 @@ export default class BaseDao {
 
     update(data) {
         const _id = data._id;
-        return this.dbModel.findOneAndUpdate({_id}, {$set: data});
+        return this.dbModel.findOneAndUpdate({_id}, {$set: data}, {multi: true});
     }
 
     remove(conditions) {
-        return this.dbModel.update(conditions, {$set: {enable: false}});
+        return this.dbModel.update(conditions, {$set: {enable: false}}, {multi: true});
     }
 
     removeById(_id) {
