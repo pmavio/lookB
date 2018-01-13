@@ -1,0 +1,22 @@
+{
+  "name": "lookb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "Mavio",
+  "license": "ISC",
+  "scripts": {
+    "service": "./node_modules/.bin/nodemon ./config/run",
+    "service-prod": "cross-env NODE_ENV=production ./node_modules/.bin/nodemon ./config/run"
+  },
+  "dependencies": {
+    "axios": "^0.17.1",
+    "debug": "^3.1.0",
+    "koa-router": "^7.3.0",
+    "koa2": "^2.0.0-alpha.7",
+    "moment": "^2.20.1",
+    "mongoose": "^4.13.9",
+    "nodemon": "^1.14.11",
+    "runkoa": "^1.5.9"
+  }
+}
