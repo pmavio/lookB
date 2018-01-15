@@ -1,6 +1,6 @@
 ﻿const config = {
     //程序运行端口
-    service_port: 6000,
+    service_port: 12345,
     //域名
     service_dns: '127.0.0.1',
     // 静态资源路径
